@@ -508,7 +508,7 @@ function updatePositions() {
   window.performance.mark("mark_start_frame");
   //do all the math OUTSIDE the loop & calculate variables ONCE
   var itemsLength = items.length; //dont calculate length all the time
-  var item;
+  var item; //get 1 item from collection
   var scroll = document.body.scrollTop / 1250; //fixed value
   var phases = []; //array to store repeated positions
 
@@ -537,7 +537,6 @@ function updatePositions() {
     var timesToUpdatePosition = window.performance.getEntriesByName("measure_frame_duration");
     logAverageFrame(timesToUpdatePosition);
   }
-  //  requestAnimationFrame(updatePositions);
 }
 // runs updatePositions on scroll
 window.addEventListener('scroll', updatePositions);
@@ -547,7 +546,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
   var movingpizza = document.querySelector("#movingPizzas1");
-  //this equals with 4 visible rows of back pizzas - no need for 200
+  //this equals with 4 visible rows of scrolling pizzas - no need for 200
   var times = Math.floor(document.body.clientHeight / (50 * cols));
 
   for (var i = 0; i < times; i++) {

@@ -2,9 +2,9 @@
 
 ### index.html
 
-* cleanup Css & minify & inline
+* cleanup Css, minify & inline
 * load print css when needed
-* load asynchronously js not altering DOM
+* load asynchronously js doesn't alter DOM
 * load web fonts with asynchronously js
 
 ### pizza.html
@@ -15,4 +15,4 @@
 * the scrolling x position seems to be repeated so it's calculated once & stored 
 * getElementsByClassName is used wherever possible in the code instead of queryall
 * moving pizzas are stored in a global item array outside of update function which is called frequently
-* use of CSS will-change & z index for positioning moving pizzas
+* use of CSS will-change property for positioning moving pizzas
