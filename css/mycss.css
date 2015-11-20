@@ -1,0 +1,41 @@
+body
+{
+    /*border: 1px solid red !important;*/
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.61;
+    font-weight: 400;
+    background: #fff;
+    font-family: 'Baumans', cursive;
+}
+
+.text-muted
+{
+    color:#bcbbbb;
+}
+.text-thiner
+{
+    font-weight:300;
+}
+.title-super
+{
+    font-size:60px;
+}
+.title-logo {
+    margin-top: 40px;
+}
+.mypage-header
+{
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+}
+}
+.myimg{
+    max-height: 100%;
+}
+.hero {
+    padding: 3em;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid green;
+    border-top: 1px solid green;
+}

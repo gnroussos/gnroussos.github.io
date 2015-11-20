@@ -1,100 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="FILLMEIN">
-    <meta name="author" content="FILLMEIN">
-    <title>Cameron Pittman: Portfolio</title>
-    <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
-<!--    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet'>-->
-<!--    <link href="css/style.min.css" rel="stylesheet">-->
-    <style type="text/css">
-      html { font-size: 100%; overflow-y: scroll; -webkit-tap-highlight-color: rgba(0,0,0,0); -ms-text-size-adjust: 100%;-webkit-text-size-adjust: none;}
-      body { margin: 0; font-size: 14px; line-height: 1.61; font-weight: 400; background: #fff; }
-      body, button, input, select, textarea { font-family: 'Open Sans', sans-serif; color: #333; }
-      a { color: #12C; }
-      a:visited { color: #61C; }
-      a:focus { outline: thin dotted; }
-      a:hover, a:active { color: #c00; outline: 0; }
-      b, strong { font-weight: bold; }
-      pre, code { font-family: monospace, monospace; font-size: 1em; }
-      ul, ol { margin: 1em 0; padding: 0 0 0 20px; }
-      img { border: 0; max-width: 100%; }
-      header, footer, .container { max-width: 45em; margin: 0 auto; }
-      header { padding: 0 0.5em; color: #C90B0B; }
-      header img { border-radius: 40px; float: left; }
-      header p { font-size:1.5em; font-weight: bold; padding-left: 4em;}
-      header p span { font-size: 0.8em; font-weight: normal;}
-      .hero { padding: 2em; background-color: #f8f8f8; font-size:1.2em; border-bottom: 1px solid #ccc;border-top: 1px solid #ccc;}
-      .content { padding: 1em 1em; }
-      .content li { list-style-type: none; font-size: 1.1em;}
-      li img { float:left; padding-right: 1em; }
-      li p { font-size: 0.9em; font-style: italic; }
-      footer {padding: 0 0.5em;border-top: 1px solid #ccc;}
-      footer span { float: right; font-style: italic; }
-      @media only screen and (max-width: 480px) {body { font-size: 12px;}header p { padding-left: 4.5em;}}
-    </style>
-    <link href="css/print.min.css" rel="stylesheet" media="print">
-    <script>
-      (function(w,g){w['GoogleAnalyticsObject']=g;
-      w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
-      // TODO: replace with your Google Analytics profile ID.
-      ga('create', 'UA-XXXX-Y');
-      ga('send', 'pageview');
-    </script>
-    <script async src="http://www.google-analytics.com/analytics.js"></script>
-    <script async src="js/perfmatters.min.js"></script>
-  </head>
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="My portfolio site">
+    <meta name="author" content="Ioannis Roussos">
+    <title>Ioannis Roussos: Portfolio</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/mycss.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+
   <body>
-    <header>
-      <a href="/"><img src="img/profilepic.jpg"></a>
-      <p>Cameron Pittman<br><span>Course Developer</span></p>
-    </header>
     <div class="container">
-      <div class="hero">
-        <strong>I love web development!</strong> This is a template for a simple portfolio. I decided to use it to showcase a few Udacity courses I've taken and some teaching work, but you can use it to showcase any kind of project that you want the world to see :) <br> Contact me: me@email.com
+      <div class="row">
+          <div class="col-md-6 title-logo img-responsive">
+              <a href="#"><img src="img/matrix.jpg" style="width:40%;border-radius:40px;" alt="logo"></a> 
+          </div>
+          <div class="col-md-6 text-right text-uppercase mypage-header">
+            <h1>Ioannis Roussos<br>
+                <small class="text-thiner">Software engineer</small>
+              </h1>
+          </div>
+    </div>
+    <div class="row">      
+        <div class="hero col-md-12">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <strong>I love software development!</strong> I decided to showcase a few courses I've taken and some work I've done.<br>
+                <span style="font-size:12px"><a href="mailto:gn.roussos@gmail.com">gn.roussos@gmail.com</a> &#9733
+                <a href="https://www.linkedin.com/in/roussosi">linkedin/roussos</a> &#9733
+                <a href="https://github.com/gnroussos">github/roussos</a></span>
+            </div>            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-muted">Featured Work</h2>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+            <img class="img-responsive" style="width:70%" src="images/udacity_logo.svg" data-target="#project1" data-toggle="modal" alt="Project 1">
+            <h3>HTML, CSS & Javascript</h3>
+            <p><a href="resume/index.html">Link to project</a></p>
       </div>
-      <div class="content">
-        <ul>
-          <li>
-            <img src="https://lh4.ggpht.com/kJEnfqhPvtm4m3EneSZ4fWYGS8lW4YNhEjk6zPkyrQaBUHc-2Y_ElDic99NHI0h-UBLXVbRCjFybFvrWxdk=s100">
-            <a href="project-2048.html">Build Your Own 2048!</a>
-            <p>I made my own version of 2048. How cool is that!?</p>
-          </li>
-          <li>
-            <img src="https://lh6.ggpht.com/f_0W8h__3G99CWTjnMjD8BUKm7yp2-wJyApLtTwFoFtlal2ULf_JgHIsOQq2NiYfKOdMlXlMHDKNo5XVZLs=s100">
-            <a href="project-webperf.html">Website Performance Optimization</a>
-            <p>Hey... this class looks familiar.</p>
-          </li>
-          <li>
-            <img src="https://lh5.ggpht.com/IKdCmTWn8a2nMhlwMYzryvzRN5CUZAOBr4tDrEAbszV7TIFe9pRAInA4kkYcgTXwrifJsBEsq1agTueuu-g=s100">
-            <a href="project-mobile.html">Mobile Web Development</a>
-            <p>Making mobile apps isn't so hard after all.</p>
-          </li>
-          <li>
-            <img style="width: 100px;" src="views/images/pizzeria.jpg">
-            <a href="views/pizza.html">Cam's Pizzeria</a>
-            <p>Who wants a performant pizza?</p>
-          </li>
-        </ul>
+      <div class="col-md-4">
+            <img class="img-responsive" style="width:70%" src="images/udacity_logo.svg" data-target="#project2" data-toggle="modal" alt="Project 2">
+            <h3>OO Javascript</h3>
+            <p><a href="arcade/index.html">Link to project</a></p>
+      </div>
+    <!--</div>-->
+    <!--<div class="row">-->
+      <div class="col-md-4">
+            <img class="img-responsive" style="width:70%" src="images/udacity_logo.svg" data-target="#project3" data-toggle="modal" alt="Project 3">
+            <h3>Website Performance Optimization</h3>
+            <p><a href="views/pizza.html">Link to project</a></p>
       </div>
     </div>
-    <footer>
-      <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
+</div>
+
+
+<!-- Modal project 1-->
+<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">HTML, CSS & JavaScript</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive center-block img-circle" style="width:50%" src="images/udacity_logo.svg">
+                <p>This was my first project for the Udacity nanodegree, Front-end Web Developer.</br>I built a sample resume with JavaScript & jQuery.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<!-- Modal project 2-->      
+<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel2">OO Javascript</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive center-block img-circle" style="width:50%" src="images/udacity_logo.svg">
+                <p>This was the second project for the Udacity nanodegree, Front-end Web Developer.</br>I made an arcade clone of Frogger, usingobject oriented JavaScript.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<!-- Modal project 3-->
+<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel3">Future Page</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive center-block img-circle" style="width:50%" src="images/udacity_logo.svg">
+                <p>In this Udacity nanodegree Front-end Web Developer project, a sample site was optimized to acquire 90+ Pagespeed score & 60fps.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div> 
+<footer>
+    <div class="row">
+        <div class="col-md-9"></div>
+        <div class="col-md-1">
+            <p>&copy;2015<p>
+        </div>
+    </div>
     </footer>
-    <script type="text/javascript">
-      WebFontConfig = {
-        google: { families: [ 'Open+Sans:400,700:latin' ] }
-      };
-      (function() {
-        var wf = document.createElement('script');
-        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(wf, s);
-      })(); </script>
-  </body>
+   <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Baumans::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+</body>
 </html>
