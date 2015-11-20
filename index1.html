@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My portfolio site">
+    <meta name="author" content="Ioannis Roussos">
+    <title>Ioannis Roussos: Portfolio</title>
+    <link href="css/print.min.css" rel="stylesheet" media="print">
+    <link href="css/style.css" rel="stylesheet">
+    <script>
+      (function(w,g){w['GoogleAnalyticsObject']=g;
+      w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
+      // TODO: replace with your Google Analytics profile ID.
+      ga('create', 'UA-XXXX-Y');
+      ga('send', 'pageview');
+    </script>
+    <script async src="http://www.google-analytics.com/analytics.js"></script>
+    <script async src="js/perfmatters.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="#"><img src="img/matrix.jpg" style="width:20%"></a> 
+      <p>Ioannis Roussos<br><span>Software Engineer</span>
+    </header>
+    <div class="container">
+      <div class="hero">
+        <strong>I love software development!</strong> I decided to showcase a few courses I've taken and some work I've done.<br>
+        <span style="font-size:12px"><a href="mailto:gn.roussos@gmail.com">gn.roussos@gmail.com</a> &#9733
+          <a href="https://www.linkedin.com/in/roussosi">linkedin/roussos</a> &#9733
+          <a href="https://github.com/gnroussos">github/roussos</span></p>
+      </div>
+      <div class="content">
+        <ul>
+          <li>
+            <img src="img/frogger.png" style="width:100px">
+            <a href="arcade/index.html">Build an arcade game!</a>
+            <p>I made my own version of Frogger.</p>
+            <p>A project for Udacity, Front-end Web Developer nanodegree.</p></br>
+          </li>
+          <li>
+            <img src="img/resume.png" style="width:100px">
+            <a href="resume/index.html">Resume</a>
+            <p>A sample Resume built with JavaScript</p>
+            <p>A project for Udacity, Front-end Web Developer nanodegree.</p>
+            </br>
+          </li>
+         <li>
+            <img style="width:100px" src="views/images/pizzeria.jpg">
+            <a href="views/pizza.html">Website Performance Optimization</a>
+            <p>Sample site was optimized to acquire 90+ Pagespeed score & 60fps.</p>
+            <p>A project for Udacity, Front-end Web Developer nanodegree.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <p>&copy;2015 <span id="crp-stats"></span></p>
+    </footer>
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Open+Sans:400,700:latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })(); </script>
+  </body>
+</html>
