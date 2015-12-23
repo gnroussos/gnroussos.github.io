@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Neighborhood Map</title>
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="css\style.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script> 
+    <script type="text/javascript" src="js/knockout-3.4.0.min.js"></script>
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 id="title-header">The city of </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div id="map" class="col-md-10 map"></div>
+            <div id="content-area" class="col-md-2">
+                    <form data-bind="submit: addItem">
+                        <input class="form-control" data-bind='value: itemToAdd, valueUpdate: "afterkeydown"' placeholder="Search for..." />
+                        <button class="btn btn-default" type="submit">Go</button>
+                        <p></p><p>Places on the map:</p>
+                        <select id="filter-box" class="places" size="7" data-bind="options: items, click: $root.showInfo" />
+                    </form>
+                </div>
+        </div>      
+    </div>   
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>     
+    <script type="text/javascript" src="js/map.js"></script> 
+</body>
+</html>
