@@ -14,17 +14,20 @@
         </div>
         <div class="row">
             <div id="map" class="col-md-12 map"></div>
-            <div id="content-area" class="controls">
+            <div class="toggle">
+                <button class="btn btn-default" data-bind="click: toggleControls" type="button">
+                    <span class="glyphicon glyphicon-resize-small" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div id="content-area" class="controls" data-bind="css: controlsToggle">
                     <form data-bind="submit: addItem">
                         <input class="form-control" data-bind='value: itemToAdd, valueUpdate: "afterkeydown"' placeholder="Search for..." />
                         <button class="btn btn-default btn-warning" type="submit">Go</button>
-                        <p></p>
                         <select id="filter-box" class="places" size="7" data-bind="options: items, click: $root.showInfo" />
                     </form>
-                </div>
-        </div>
+            </div>
     </div>
-    <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=places&callback=initMap" async></script>
     <script type="text/javascript" src="js/map.min.js"></script>
 </body>
 </html>
