@@ -9,6 +9,34 @@ body
     font-family: 'Baumans', cursive;
 }
 
+i { 
+    color:rgba(0, 177, 115, 0.75);
+    padding-left:10px;
+    padding-right:15px;
+}
+.center-row{
+    margin-left:10%;
+}
+.center-row2{
+    margin-left:15%;
+}
+.center-row3{
+    margin-left:10%;
+}
+.project{
+    
+    box-shadow:0 0 20px gray;
+}
+.project-box{
+   border:1px groove rgba(0, 177, 115, 0.75);
+   display:block;
+   margin: 10px;
+   height:220px;
+}
+.links{
+    margin-top:40px;
+    text-align:center;
+}
 .text-muted
 {
     color:#bcbbbb;

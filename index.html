@@ -7,8 +7,9 @@
     <meta name="description" content="My portfolio site">
     <meta name="author" content="Ioannis Roussos">
     <title>Ioannis Roussos: Portfolio</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/mycss.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <script type="text/javascript" src="js/jQuery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
 </head>
@@ -29,11 +30,14 @@
         <div class="hero col-md-12">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <strong>I love software development!</strong> I decided to showcase a few courses I've taken and some work I've done. Click on the project images for a short description.<br><br>
-                For some of my projects, please check the Gitub link.<br>
-                <span style="font-size:12px"><a href="mailto:gn.roussos@gmail.com">gn.roussos@gmail.com</a> &#9733
-                <a href="https://www.linkedin.com/in/roussosi">linkedin/roussos</a> &#9733
-                <a href="https://github.com/gnroussos">github/roussos</a></span>
+                <strong>I love software development!</strong> I decided to showcase some work I've done. Click on the project images for a short description.<br>
+                For more projects, please check the Gitub link.<br>
+                <div class="links">
+                    <a href="mailto:gn.roussos@gmail.com" title="Contact me"><i class="fa fa-envelope fa-3x"></i></a>
+                    <a href="https://www.linkedin.com/in/roussosi" title="LinkedIn profile"><i class="fa fa-linkedin-square fa-3x"></i></a>
+                    <a href="https://github.com/gnroussos" title="GitHub"><i class="fa fa-github fa-3x"></i></a>
+                    <a href="https://docs.google.com/document/d/1jTNdvoNQMmJ7ROXU0zr7sGe1iJtAp2SAbUFFABtK0-g/edit?usp=sharing" title="Resume"><i class="fa fa-file fa-3x"></i></a>
+                </div>
             </div>            
         </div>
     </div>
@@ -42,41 +46,43 @@
             <h2 class="text-muted">Featured Work</h2>
         </div>
     </div>
-    <div class="row">
-      <div class="col-md-3">
-            <img class="img-responsive" style="width:40%" src="images/udacity_logo.svg" data-target="#project1" data-toggle="modal" alt="Project 1">
+    <div class="row center-row">
+      <div class="col-md-3 project project-box">
+            <img class="img-responsive center-block" style="width:40%" src="images/udacity_logo.svg" data-target="#project1" data-toggle="modal" alt="Project 1">
             <h3>HTML, CSS & Javascript</h3>
             <p><a href="resume/index.html">Link to project</a></p>
       </div>
-      <div class="col-md-3">
-            <img class="img-responsive" style="width:40%" src="images/udacity_logo.svg" data-target="#project2" data-toggle="modal" alt="Project 2">
+      <div class="col-md-3 project project-box">
+            <img class="img-responsive center-block" style="width:40%" src="images/udacity_logo.svg" data-target="#project2" data-toggle="modal" alt="Project 2">
             <h3>OO Javascript</h3>
             <p><a href="arcade/index.html">Link to project</a></p>
       </div>
-      <div class="col-md-3">
-            <img class="img-responsive" style="width:40%" src="images/udacity_logo.svg" data-target="#project3" data-toggle="modal" alt="Project 3">
-            <h3>Website Performance Optimization</h3>
-            <p><a href="views/pizza.html">Link to project</a></p>
-      </div>
-      <div class="col-md-3">
-          <img class="img-responsive" style="width:40%" src="images/udacity_logo.svg" data-target="#project7" data-toggle="modal" alt="Project 7">
+      <div class="col-md-3 project project-box">
+          <img class="img-responsive center-block" style="width:40%" src="images/udacity_logo.svg" data-target="#project7" data-toggle="modal" alt="Project 7">
           <h3>Ajax</h3>
           <p><a href="map/index.html">Link to project</a></p>
       </div>
     </div>
-    <div class="row">
-        <div class="col-md-3">
-            <img class="img-responsive" src="images/mslogoe.jpg" data-target="#project4" data-toggle="modal" alt="Project 4">
+    <div class="row center-row2">
+        <div class="col-md-3 project project-box">
+            <img class="img-responsive center-block" style="width:40%" src="images/udacity_logo.svg" data-target="#project3" data-toggle="modal" alt="Project 3">
+            <h3>Website Performance Optimization</h3>
+            <p><a href="views/pizza.html">Link to project</a></p>
+        </div>
+        <div class="col-md-3 project project-box">
+            <img class="img-responsive center-block" src="images/mslogoe.jpg" data-target="#project4" data-toggle="modal" alt="Project 4">
             <h3>Windows 10 Game</h3>
             <p><a href="https://github.com/gnroussos/memorygame">Link to project</a></p>
         </div>
-        <div class="col-md-3">
-            <img class="img-responsive" src="images/edx_logo.jpg" data-target="#project5" data-toggle="modal" alt="Project 5">
+        <div class="col-md-3 project project-box">
+            <img class="img-responsive center-block" src="images/edx_logo.jpg" data-target="#project5" data-toggle="modal" alt="Project 5">
             <h3>XAML & UWP</h3>
             <p><a href="https://github.com/gnroussos/xaml">Link to project</a></p>
         </div>
-        <div class="col-md-3">
-            <img class="img-responsive" src="images/mslogoe.jpg" data-target="#project6" data-toggle="modal" alt="Project 6">
+    </div>
+    <div class="row center-row3">
+        <div class="col-md-3 project project-box">
+            <img class="img-responsive center-block" src="images/mslogoe.jpg" data-target="#project6" data-toggle="modal" alt="Project 6">
             <h3>C#</h3>
             <p><a href="https://github.com/gnroussos/time">Link to project</a></p>
         </div>
@@ -92,7 +98,7 @@
             </div>
             <div class="modal-body">
                 <img class="img-responsive center-block img-circle" style="width:50%" src="images/resume.png">
-                <p>This was my first project for the Udacity nanodegree, Front-end Web Developer.<br>I built a sample resume with JavaScript & jQuery.</p>
+                <p>A project for the Udacity nanodegree, Front-end Web Developer.<br>I built a sample resume with JavaScript & jQuery.</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -106,11 +112,11 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel2">OO Javascript</h4>
+                <h4 class="modal-title" id="myModalLabel2">Arcade clone</h4>
             </div>
             <div class="modal-body">
                 <img class="img-responsive center-block img-circle" style="width:50%" src="images/frogger.png">
-                <p>This was the second project for the Udacity nanodegree, Front-end Web Developer.<br>I made an arcade clone of Frogger, usingobject oriented JavaScript.</p>
+                <p>A project for the Udacity nanodegree, Front-end Web Developer.<br>I made an arcade clone of Frogger, using object oriented JavaScript.</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -212,7 +218,7 @@
     <div class="row">
         <div class="col-md-9"></div>
         <div class="col-md-1">
-            <p>&copy;2015<p>
+            <p>&copy;2016<p>
         </div>
     </div>
     </footer>
